@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Bluechip Solutions</title>
+    <meta name="description" content="Industry-specific software solutions for construction, healthcare, education, and more">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>HQ: Mumbai, India</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@bluechipsolutions.in</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 98765 43210</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span>B</span>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Bluechip</h1>
+                        <p>Solutions</p>
+                    </div>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">Our Company</a></li>
+                        <li><a href="technology.html" class="nav-link">Technology</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">Products <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="products.html#discrete">Discrete Manufacturing</a></li>
+                                <li><a href="products.html#accounting">ProfitEazy Accounting</a></li>
+                                <li><a href="products.html#microfinance">ProfitEazy Microfinance</a></li>
+                                <li><a href="products.html#supplier">ProfitEazy Supplier Portal</a></li>
+                                <li><a href="products.html#workshop">ProfitEazy Workshop</a></li>
+                                <li><a href="products.html#distribution">ProfitEazy Distribution</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active">Solutions <i class="fas fa-chevron-down"></i></a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-column">
+                                        <a href="#construction">Construction Management</a>
+                                        <a href="#flour">Flour Mill Management</a>
+                                        <a href="#transport">Transport Corporation</a>
+                                        <a href="#school">School/College Management</a>
+                                        <a href="#freight">Freight Forwarding</a>
+                                    </div>
+                                    <div class="mega-column">
+                                        <a href="#hrms">HRMS</a>
+                                        <a href="#spinning">Spinning Mill Management</a>
+                                        <a href="#farming">Contract Farming</a>
+                                        <a href="#governance">E-Governance</a>
+                                        <a href="#matches">Matches Manufacturing</a>
+                                    </div>
+                                    <div class="mega-column">
+                                        <a href="#hospital">Hospital Management</a>
+                                        <a href="#telephone">Telephone Authority</a>
+                                        <a href="#garments">Garments Manufacturing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">Partners <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partners.html#solution">Solution Partner</a></li>
+                                <li><a href="partners.html#marketing">Marketing Partner</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-cta">
+                    <button class="cta-button" onclick="requestDemo()">Request for Demo</button>
+                </div>
+
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Industry Solutions</h1>
+            <p>Tailored software solutions for specific industries and business needs</p>
+        </div>
+    </section>
+
+    <!-- Solutions Grid -->
+    <section class="solutions-grid">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Solutions Portfolio</h2>
+                <p>Comprehensive software solutions designed for specific industries and business verticals</p>
+            </div>
+            
+            <div class="solutions-container">
+                <!-- Construction Management -->
+                <div class="solution-card" id="construction">
+                    <div class="solution-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Construction Management</h3>
+                    <p>Complete project management solution for construction companies with project tracking, resource management, and financial control.</p>
+                    <ul class="solution-features">
+                        <li>Project Planning & Scheduling</li>
+                        <li>Resource Allocation</li>
+                        <li>Cost Management</li>
+                        <li>Progress Tracking</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Flour Mill Management -->
+                <div class="solution-card" id="flour">
+                    <div class="solution-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Flour Mill Management</h3>
+                    <p>Specialized solution for flour mill operations including inventory management, production planning, and quality control.</p>
+                    <ul class="solution-features">
+                        <li>Raw Material Management</li>
+                        <li>Production Optimization</li>
+                        <li>Quality Control</li>
+                        <li>Sales & Distribution</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Transport Corporation -->
+                <div class="solution-card" id="transport">
+                    <div class="solution-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Transport Corporation</h3>
+                    <p>Comprehensive transportation management system for logistics companies with route optimization and fleet management.</p>
+                    <ul class="solution-features">
+                        <li>Fleet Management</li>
+                        <li>Route Optimization</li>
+                        <li>Driver Management</li>
+                        <li>Fuel Management</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- School/College Management -->
+                <div class="solution-card" id="school">
+                    <div class="solution-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>School/College Management</h3>
+                    <p>Complete educational institution management system with student information, academic management, and administration tools.</p>
+                    <ul class="solution-features">
+                        <li>Student Information System</li>
+                        <li>Academic Management</li>
+                        <li>Fee Management</li>
+                        <li>Examination System</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Freight Forwarding -->
+                <div class="solution-card" id="freight">
+                    <div class="solution-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Freight Forwarding</h3>
+                    <p>End-to-end freight forwarding solution with shipment tracking, documentation, and customs clearance management.</p>
+                    <ul class="solution-features">
+                        <li>Shipment Tracking</li>
+                        <li>Documentation Management</li>
+                        <li>Customs Clearance</li>
+                        <li>Billing & Invoicing</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- HRMS -->
+                <div class="solution-card" id="hrms">
+                    <div class="solution-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>HRMS</h3>
+                    <p>Human Resource Management System with employee management, payroll processing, and performance tracking capabilities.</p>
+                    <ul class="solution-features">
+                        <li>Employee Management</li>
+                        <li>Payroll Processing</li>
+                        <li>Performance Tracking</li>
+                        <li>Leave Management</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Spinning Mill Management -->
+                <div class="solution-card" id="spinning">
+                    <div class="solution-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Spinning Mill Management</h3>
+                    <p>Specialized solution for textile spinning mills with production planning, quality control, and inventory management.</p>
+                    <ul class="solution-features">
+                        <li>Production Planning</li>
+                        <li>Quality Control</li>
+                        <li>Inventory Management</li>
+                        <li>Order Management</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Contract Farming -->
+                <div class="solution-card" id="farming">
+                    <div class="solution-icon">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3>Contract Farming</h3>
+                    <p>Agricultural contract management system with farmer management, crop planning, and procurement tracking.</p>
+                    <ul class="solution-features">
+                        <li>Farmer Management</li>
+                        <li>Crop Planning</li>
+                        <li>Procurement Tracking</li>
+                        <li>Payment Management</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- E-Governance -->
+                <div class="solution-card" id="governance">
+                    <div class="solution-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>E-Governance</h3>
+                    <p>Digital governance solutions for government organizations with citizen services, document management, and workflow automation.</p>
+                    <ul class="solution-features">
+                        <li>Citizen Services</li>
+                        <li>Document Management</li>
+                        <li>Workflow Automation</li>
+                        <li>Reporting & Analytics</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Matches Manufacturing -->
+                <div class="solution-card" id="matches">
+                    <div class="solution-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Matches Manufacturing</h3>
+                    <p>Specialized manufacturing solution for match-making industry with production planning and quality control.</p>
+                    <ul class="solution-features">
+                        <li>Production Planning</li>
+                        <li>Raw Material Management</li>
+                        <li>Quality Control</li>
+                        <li>Distribution Management</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Hospital Management -->
+                <div class="solution-card" id="hospital">
+                    <div class="solution-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Hospital Management</h3>
+                    <p>Complete healthcare management system with patient records, appointment scheduling, and billing management.</p>
+                    <ul class="solution-features">
+                        <li>Patient Management</li>
+                        <li>Appointment Scheduling</li>
+                        <li>Billing & Insurance</li>
+                        <li>Medical Records</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Telephone Authority -->
+                <div class="solution-card" id="telephone">
+                    <div class="solution-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telephone Authority</h3>
+                    <p>Telecommunications management solution with customer management, billing, and service provisioning capabilities.</p>
+                    <ul class="solution-features">
+                        <li>Customer Management</li>
+                        <li>Service Provisioning</li>
+                        <li>Billing Management</li>
+                        <li>Network Management</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+
+                <!-- Garments Manufacturing -->
+                <div class="solution-card" id="garments">
+                    <div class="solution-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Garments Manufacturing</h3>
+                    <p>Complete garment manufacturing solution with order management, production planning, and quality control.</p>
+                    <ul class="solution-features">
+                        <li>Order Management</li>
+                        <li>Production Planning</li>
+                        <li>Quality Control</li>
+                        <li>Inventory Management</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Solutions -->
+    <section class="custom-solutions">
+        <div class="container">
+            <div class="custom-content">
+                <div class="custom-text">
+                    <h2>Need a Custom Solution?</h2>
+                    <p>Don't see your industry listed? We specialize in creating custom software solutions tailored to your specific business needs. Our team of experts will work closely with you to understand your requirements and deliver a solution that perfectly fits your organization.</p>
+                    <ul class="custom-features">
+                        <li><i class="fas fa-check"></i> Custom Development</li>
+                        <li><i class="fas fa-check"></i> Industry Expertise</li>
+                        <li><i class="fas fa-check"></i> Scalable Architecture</li>
+                        <li><i class="fas fa-check"></i> Ongoing Support</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="requestDemo()">Discuss Your Requirements</button>
+                </div>
+                <div class="custom-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Implement the Right Solution?</h2>
+                <p>Let us help you choose and implement the perfect solution for your business</p>
+                <button class="btn btn-primary btn-large" onclick="requestDemo()">Get Started Today</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>B</span>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Bluechip Solutions</h3>
+                            <p>Enterprise Software Solutions</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Leading provider of enterprise software solutions with cutting-edge technology 
+                        and comprehensive business applications.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Company</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#construction">Construction Management</a></li>
+                        <li><a href="#hrms">HRMS</a></li>
+                        <li><a href="#hospital">Hospital Management</a></li>
+                        <li><a href="#school">School Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info" style="flex-direction: column-reverse;">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mumbai, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@bluechipsolutions.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bluechip Solutions. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Demo Button -->
+    <button class="floating-demo-btn" onclick="requestDemo()">
+        <i class="fas fa-play"></i>
+        Demo
+    </button>
+
+    <!-- Custom Styles for Solutions Page -->
+    <style>
+        .solutions-grid {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .solutions-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .solution-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #f1f5f9;
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .solution-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 28px;
+        }
+        
+        .solution-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+        
+        .solution-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .solution-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+        
+        .solution-features li {
+            padding: 5px 0;
+            color: #475569;
+            font-size: 14px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .solution-features li::before {
+            content: '•';
+            color: #3b82f6;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .custom-solutions {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        
+        .custom-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .custom-text h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+        
+        .custom-text p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .custom-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+        
+        .custom-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #475569;
+        }
+        
+        .custom-features i {
+            color: #10b981;
+        }
+        
+        .custom-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .custom-image .image-placeholder {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            color: #3b82f6;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .solutions-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .solution-card {
+                padding: 20px;
+            }
+            
+            .custom-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .custom-text h2 {
+                font-size: 24px;
+            }
+            
+            .custom-image .image-placeholder {
+                width: 150px;
+                height: 150px;
+                font-size: 48px;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+</body>
+</html>
