@@ -1,0 +1,250 @@
+.area-bg {
+  background-image: url("https://www.bluechipsolutions.in/assets/img/bg/area_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+
+
+.testimonial-area {
+  position: relative;
+  text-align: center;
+  /* padding: 20px 0; */
+}
+
+.section__title {
+  position: relative;
+  z-index: 1;
+}
+
+.section__title .sub-title {
+  color: #007bff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background: azure;
+}
+
+.section__title .title {
+  color: #1e1e1e;
+  font-size: 40px;
+  margin: 0;
+}
+
+.brand-area-two {
+  padding: 20px 0;
+  background: transparent;
+}
+
+.brand-active {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.brand-active .col {
+  flex: 0 0 150px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.brand-active img {
+  max-width: 100%;
+  height: auto;
+  /* filter: grayscale(100%); */
+  transition: filter 0.3s;
+}
+
+.brand-active img:hover {
+  filter: grayscale(0);
+}
+
+.testimonial__shapes-two {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.testimonial__shapes-two .object {
+  width: 50px;
+  position: absolute;
+}
+
+.testimonial__shapes-two .rotateme {
+  animation: rotate 10s linear infinite;
+}
+
+.testimonial__shapes-two .left {
+  left: 10px;
+}
+
+.testimonial__shapes-two .right {
+  right: 10px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.marquee {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Adjust container to fit content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-left: 90px;
+}
+
+/* Move title above brands */
+.section__title {
+  margin-bottom: 10px; /* Space between title and brands */
+}
+
+/* Position decorative elements */
+.testimonial__shapes-two .left {
+  left: 0;
+  top: 20%;
+}
+
+.testimonial__shapes-two .right {
+  right: 0;
+  top: 20%;
+}
+
+/* Add decorative elements to match image */
+.testimonial__shapes-two .left img {
+  transform: rotate(0deg);
+  background: url("https://via.placeholder.com/50/00ff00?text=Star") no-repeat;
+  background-size: contain;
+}
+
+.testimonial__shapes-two .right img {
+  transform: rotate(0deg);
+  background: url("https://via.placeholder.com/50/ff0000?text=Wavy") no-repeat;
+  background-size: contain;
+}
+
+.slick-list,
+.slick-slider,
+.slick-track {
+  position: relative;
+  display: block;
+}
+
+.slick-slider {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: 0;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:after,
+.slick-track:before {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-slide,
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-initialized .slick-slide,
+.slick-slide img {
+  display: block;
+}
+
+.slick-arrow.slick-hidden,
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
