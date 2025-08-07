@@ -345,3 +345,4 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
