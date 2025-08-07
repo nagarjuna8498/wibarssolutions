@@ -310,3 +310,67 @@ function formatPhoneNumber(input) {
     input.value = formattedValue;
 }
 
+
+// Request For Demo Button
+
+function showDemoModal() {
+      const existingModal = document.querySelector('.modal-overlay');
+      if (existingModal) existingModal.remove();
+
+      const modal = document.createElement('div');
+      modal.className = 'modal-overlay';
+      modal.innerHTML = `
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Request a Demo</h3>
+            <button class="modal-close" onclick="closeModal()">×</button>
+          </div>
+        <form id="demo-form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="e9ee7e13-ef42-48c6-a786-3bfa6bb7a495">
+  <div class="form-group">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" placeholder="Your Name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" placeholder="Your Email" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+  </div>
+  <div class="form-group">
+    <label for="product">Select Product</label>
+    <select name="product" id="product" required>
+      <option value="">Select Product</option>
+      <option value="discrete-manufacturing">Live Demo</option>
+      <option value="profiteazy-accounting">Internship</option>
+      <option value="profiteazy-microfinance">Web Development</option>
+      <option value="profiteazy-supplier">Technical Support</option>
+      <option value="profiteazy-workshop">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="message">Tell us about your requirements</label>
+    <textarea name="message" id="message" placeholder="Tell us about your requirements" rows="4"></textarea>
+  </div>
+  <button type="submit" class="submit-btn">Request Demo</button>
+</form>
+        </div>
+      `;
+
+      document.body.appendChild(modal);
+
+    //   document.getElementById('demo-form').addEventListener('submit', function(event) {
+    //     event.preventDefault();
+    //     alert('Demo request submitted successfully!');
+    //     closeModal();
+    //   });
+    }
+
+
+
+    function closeModal() {
+      const modal = document.querySelector('.modal-overlay');
+      if (modal) modal.remove();
+    }
