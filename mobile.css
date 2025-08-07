@@ -103,7 +103,7 @@
   transition: max-height 0.3s ease-in-out;
 }
 
- /* Enhanced Submenu */
+/* Enhanced Submenu */
 .submenu {
   list-style: none;
   max-height: 0;
@@ -138,14 +138,15 @@
 }
 
 .submenu a:hover,
-  .submenu a:active {
-    background: linear-gradient(
+.submenu a:active {
+  background: linear-gradient(
     135deg,
     var(--primary-blue-light) 0%,
-    var(--primary-orange-light) 100%);
-    border-left-color: #ff6600;
-    transform: translateX(4px);
-  }
+    var(--primary-orange-light) 100%
+  );
+  border-left-color: #ff6600;
+  transform: translateX(4px);
+}
 
 /* Submenu items list */
 .mobile-nav-menu .submenu li {
