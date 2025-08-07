@@ -1,3 +1,6 @@
+
+
+
 // Function to toggle the mobile menu
 function toggleMobileMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
@@ -99,5 +102,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const submenus = document.querySelectorAll('.mobile-nav-menu .submenu');
     submenus.forEach(submenu => {
         submenu.style.maxHeight = '0px';
+    });
+});
+
+// Close mobile menu when a submenu item is clicked
+const submenuLinks = document.querySelectorAll('.mobile-nav-menu .submenu a');
+submenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenu.classList.remove('open');
+        closeAllSubmenus();
     });
 });
