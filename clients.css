@@ -7,8 +7,6 @@
   overflow: hidden;
 }
 
-
-
 .testimonial-area {
   position: relative;
   text-align: center;
@@ -100,7 +98,7 @@
 .marquee {
   display: flex;
   animation: scroll 20s linear infinite;
-  gap: 10px;
+  gap: 0px;
 }
 
 @keyframes scroll {
@@ -248,4 +246,98 @@
   display: block;
   height: auto;
   border: 1px solid transparent;
+}
+
+/* Target the images inside the 'col' divs within the 'marquee' */
+.marquee .col img {
+  /* CRITICAL: Set the fixed size for uniform display */
+  width: 120px;
+  height: 70px;
+
+  /* Ensure the logo maintains its aspect ratio and isn't distorted */
+  object-fit: contain;
+
+  /* Center the image within its allocated space (optional, but good practice) */
+  display: block;
+  margin: 0 auto;
+
+  /* Ensure the image takes up the full space of its container for consistent spacing */
+  max-width: 100%;
+}
+
+/* You might also want to ensure the parent 'col' has a consistent width if it's part of a flex/grid setup, but the image styles above should be the main fix. */
+.marquee .col {
+  /* Giving the column a consistent width helps with the spacing in the slider */
+  flex-shrink: 0;
+  width: 180px; /* Adjust this value to control the spacing between logos */
+  text-align: center;
+}
+
+/* 1. Ensure the parent container can handle 3D space */
+.brand-area-two {
+  perspective: 1000px; /* Essential for 3D effects */
+}
+
+/* 2. Define the Animation */
+@keyframes tilt-scroll {
+  0% {
+    transform: translateZ(0) rotateY(0deg);
+  }
+  50% {
+    /* Tilt slightly as they pass the center */
+    transform: translateZ(20px) rotateY(2deg);
+  }
+  100% {
+    transform: translateZ(0) rotateY(0deg);
+  }
+}
+
+/* 3. Apply the Animation to the Logos */
+.marquee .col img {
+  /* Keep the uniform size CSS from before */
+  width: 120px;
+  height: 50px;
+  object-fit: contain;
+
+  /* Apply the animation */
+  animation: tilt-scroll 10s linear infinite; /* Adjust duration (10s) to match your scroll speed */
+}
+
+/* NOTE: You'll likely need to adjust the animation timing and duration to match your existing marquee script. */
+
+/* Increase the container width for each logo */
+.marquee .col {
+  flex: 0 0 250px; /* Increased from 150px/180px to 250px to allow wider logos */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px; /* Added more horizontal padding for breathing room */
+  flex-shrink: 0;
+  text-align: center;
+}
+
+/* Increase the actual image size */
+.marquee .col img {
+  /* Set a larger fixed width */
+  width: 9000px; /* Increased from 120px */
+  height: 100px; /* Increased from 50px/70px to keep aspect ratio */
+
+  /* Critical: Maintain aspect ratio without distortion */
+  object-fit: contain;
+
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+
+  /* Keep your 3D animation effect */
+  animation: tilt-scroll 10s linear infinite;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+/* Enhanced Hover Effect */
+.marquee .col img:hover {
+  transform: scale(1.1) translateZ(30px) !important; /* Makes it "pop" out more on hover */
+  animation-play-state: paused;
 }
