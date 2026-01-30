@@ -155,7 +155,7 @@ body {
 
 .contact-info {
   display: flex;
-  gap: 24px;
+  gap: 3px;
 }
 
 .contact-item a {
@@ -559,7 +559,7 @@ body {
 
 .mega-column a {
   display: block;
-  padding: 14px 18px;
+  padding: 12px 12  px;
   color: var(--text-primary);
   text-decoration: none;
   border-radius: 12px;
@@ -2976,19 +2976,144 @@ body {
  }
  
 
- .submit-btn {
-   width: 100%;
-   padding: 0.5rem;
-   background-color: #007bff;
-   color: white;
-   font-size: 0.9rem;
-   border: none;
-   border-radius: 8px;
-   cursor: pointer;
-   transition: background-color 0.2s ease-in-out;
- }
- 
+.submit-btn {
+    /* Base Size and Color */
+    width: 100%; /* Or adjust to a fixed width if not inside a full-width container */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    
+    /* Text */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600; /* Bolder text for visibility */
+    cursor: pointer;
+    
+    /* Modern Background: Subtle Gradient */
+   
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    /* Shadow for Depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+    /* Transition for smooth hover effect */
+    transition: all 0.3s ease;
+}
 
- .submit-btn:hover {
-   background-color: #0056b3;
- }
+.submit-btn:hover {
+    /* Slightly darker gradient on hover */
+    background: linear-gradient(145deg, #0056b3, #1e87f0);
+    /* Increase shadow for a "pop" effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); /* Lift the button */
+}
+
+.submit-btn:active {
+    transform: translateY(0); /* Press-down effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* -----------------------END----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. THE FLOATING LOOP (Gives it the 'GIF' feel) */
+@keyframes floatLoop {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+/* 2. THE SHIMMER SHINE (Light sweep across the card) */
+@keyframes shine {
+  0% { left: -100%; }
+  20% { left: 100%; }
+  100% { left: 100%; }
+}
+
+/* 3. LOGO PULSE (Green ring breathing) */
+@keyframes pulseRing {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.congrats-gif-card {
+  position: absolute;
+  backdrop-filter: blur(12px);
+  animation: floatLoop 4s ease-in-out infinite;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Shimmer Layer Styling */
+.shimmer {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  transform: skewX(-20deg);
+  animation: shine 5s infinite;
+}
+
+/* Text & Visual Styles */
+.congrats-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: #2563eb; /* Blue */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.milestone-desc {
+  font-size: 13px;
+  color: #1e293b;
+  line-height: 1.2;
+  margin-top: 4px;
+}
+
+.client-logo-gif {
+  height: 45px;
+  width: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #22c55e; /* Green pulse */
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulseRing 2s infinite;
+}
+
+/* 4. HOVER EFFECTS */
+.congrats-gif-card:hover {
+  transform: scale(1.05) translateY(-10px) !important;
+  /* background: rgba(255, 255, 255, 1); */
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  border-color: #3b82f6;
+}
+
+.congrats-gif-card:hover .confetti-icon {
+  display: inline-block;
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
