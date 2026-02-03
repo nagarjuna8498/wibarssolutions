@@ -394,23 +394,22 @@
                   justify-content: center;
                   align-items: center;
                   margin: 20px auto;
-                  max-width: 480px; /* mobile-friendly width */
+                  max-width: 480px;
                 }
 
                 .dashboard-image {
-                  width: 290%;
-                  max-width: 460px; /* keeps it mobile-sized */
-                  height: 460px;
-                  padding-right: 80px;
+                  width: 100%;
+                  max-width: 420px;
+                  height: auto; /* keeps aspect ratio */
                   border-radius: 12px;
                   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
                   transition:
-                    transform 0.5s ease,
-                    box-shadow 0.5s ease;
+                    transform 0.4s ease,
+                    box-shadow 0.4s ease;
                 }
 
                 .dashboard-image:hover {
-                  transform: translateY(-6px) scale(1.02);
+                  transform: translateY(-4px) scale(1.02);
                   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
                 }
               </style>
@@ -426,22 +425,51 @@
 
               <style>
                 .dashboard-gallery {
-                  display: flex;
-                  flex-wrap: wrap; /* allows wrapping if screen is small */
-                  /*gap: 20px; spacing between images */
-                  /*justify-content: center;  center align images */
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: 20px;
+                  padding: 20px;
+                  justify-items: center;
                 }
 
+                .image-wrapper {
+                  flex: 1 1 300px; /* flexible width, minimum 300px */
+                  display: flex;
+                  justify-content: center;
+                }
                 .image-wrapper img {
-                  width: 350px;
-                  height: 230px;
-                  border-radius: 8px;
-                  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-                  transition: transform 0.5s ease;
+                  width: 130%;
+                  max-width: 360px; /* cap size on desktop */
+                  height: auto; /* keep aspect ratio */
+                  border-radius: 12px;
+                  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+                  transition:
+                    transform 0.4s ease,
+                    box-shadow 0.4s ease;
                 }
 
                 .image-wrapper img:hover {
-                  transform: translateY(-8px) rotate(1deg);
+                  transform: translateY(-6px) scale(1.03);
+                  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+                }
+
+                /* Mobile adjustments */
+                @media (max-width: 768px) {
+                  .dashboard-gallery {
+                    grid-template-columns: 1fr; /* stack vertically */
+                  }
+                  /* .image-wrapper img {
+                    max-width: 95%; fit screen neatly 
+                  }*/
+                  .dashboard-section {
+                    max-width: 95%;
+                    margin: 0 auto;
+                  }
+                  .dashboard-image {
+                    width: 100%;
+                    height: auto;
+                    max-width: 420px;
+                  }
                 }
               </style>
 
