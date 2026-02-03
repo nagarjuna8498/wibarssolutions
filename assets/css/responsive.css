@@ -74,68 +74,68 @@
 }
 
 @media (max-width: 768px) {
-    /* Style for the main product sections to stack content vertically */
-    .product-section .product-content {
-        flex-direction: column;
-        align-items: center; /* Center the image and text content */
-        text-align: center; /* Center the text for a better mobile experience */
-    }
+  /* Style for the main product sections to stack content vertically */
+  .product-section .product-content {
+    flex-direction: column;
+    align-items: center; /* Center the image and text content */
+    text-align: center; /* Center the text for a better mobile experience */
+  }
 
-    /* Reset the 'reverse' order on mobile so all images are at the top */
-    .product-section .product-content.reverse {
-        flex-direction: column;
-    }
+  /* Reset the 'reverse' order on mobile so all images are at the top */
+  .product-section .product-content.reverse {
+    flex-direction: column;
+  }
 
-    /* Style for the product image container */
-    .product-image {
-        margin-bottom: 20px; /* Add some space below the image */
-        width: 100%; /* Ensure the image container takes the full width */
-    }
-    
-    /* Ensure all images inside the product-image container are responsive */
-    .product-image img {
-        max-width: 100%; /* The image will not exceed the width of its container */
-        height: auto;    /* Maintain the aspect ratio */
-        display: block;  /* Remove any extra space below the image */
-        width: 100% !important; /* Override any inline widths to ensure it fits */
-    }
+  /* Style for the product image container */
+  .product-image {
+    margin-bottom: 20px; /* Add some space below the image */
+    width: 100%; /* Ensure the image container takes the full width */
+  }
 
-    /* Style for the product information container */
-    .product-info {
-        width: 100%; /* Make the text content take the full width */
-        padding: 0 15px; /* Add horizontal padding for better readability */
-    }
+  /* Ensure all images inside the product-image container are responsive */
+  .product-image img {
+    max-width: 100%; /* The image will not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra space below the image */
+    width: 100% !important; /* Override any inline widths to ensure it fits */
+  }
 
-    /* Adjust the feature list for mobile view */
-    .feature-list {
-        text-align: left; /* Keep the bullet points left-aligned for readability */
-        list-style-position: inside;
-        padding-left: 0;
-    }
+  /* Style for the product information container */
+  .product-info {
+    width: 100%; /* Make the text content take the full width */
+    padding: 0 15px; /* Add horizontal padding for better readability */
+  }
 
-    /* Center the product title on mobile */
-    .product-info h3 {
-        text-align: center;
-    }
+  /* Adjust the feature list for mobile view */
+  .feature-list {
+    text-align: left; /* Keep the bullet points left-aligned for readability */
+    list-style-position: inside;
+    padding-left: 0;
+  }
 
-    /* Adjust the product buttons to be full-width and stacked */
-    .product-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px; /* Add space between the buttons */
-        margin-top: 20px;
-    }
-    
-    .product-buttons .btn {
-        width: 100%;
-        margin: 0;
-    }
-    
-    /* Remove any unnecessary side margins that might be causing content to merge */
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  /* Center the product title on mobile */
+  .product-info h3 {
+    text-align: center;
+  }
+
+  /* Adjust the product buttons to be full-width and stacked */
+  .product-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add space between the buttons */
+    margin-top: 20px;
+  }
+
+  .product-buttons .btn {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Remove any unnecessary side margins that might be causing content to merge */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 /* Tablets */
 @media (max-width: 768px) {
@@ -154,7 +154,7 @@
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 60px;
+    gap: 0px;
   }
 
   .hero-title {
